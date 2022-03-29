@@ -13,7 +13,7 @@ module.exports.run = async ({ api, event }) => {
 	const axios = require('axios');
 	const request = require('request');
 	const fs = require("fs");
-		axios.get('https://api-vip.thanhnhu2.repl.co/gai').then(res => {
+		axios.get('https://Api-vip-1.nguyennhuthanh.repl.co/gai').then(res => {
 		let callback = function () {
 					api.sendMessage({
 						body : ``,
