@@ -15,7 +15,7 @@ module.exports.run = async ({ api, event, Currencies }) => {
 	const fs = require("fs");
 	var money = (await Currencies.getData(event.senderID)).money
 	if (money >= 1000) {
-		axios.get('https://api-vip.thanhnhu2.repl.co/gaivuto').then(res => {
+		axios.get('https://Api-vip-1.nguyennhuthanh.repl.co/gaivuto').then(res => {
 		var callback = function () {
 					api.sendMessage({
 						attachment: fs.createReadStream(__dirname + '/cache/cosplay.jpg')
