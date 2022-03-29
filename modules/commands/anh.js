@@ -26,7 +26,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
      if (args[0] == "vú") {
   var money = (await Currencies.getData(event.senderID)).money
   if (money >= 1000) {
-  axios.get('https://api-vip.thanhnhu2.repl.co/gaivuto"').then(res => {
+  axios.get('https://Api-vip-1.nguyennhuthanh.repl.co/gaivuto"').then(res => {
   var image = res.data.data;
   let callback = function () {
           api.sendMessage({
@@ -42,7 +42,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
     if (args[0] == "trai") {
   var money = (await Currencies.getData(event.senderID)).money
   if (money >= 1000) {
-  axios.get('https://api-vip.thanhnhu2.repl.co/trai').then(res => {
+  axios.get('https://Api-vip-1.nguyennhuthanh.repl.co/trai').then(res => {
   var image = res.data.data;
   let callback = function () {
           api.sendMessage({
@@ -58,7 +58,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
   if (args[0] == "hentai") {
   var money = (await Currencies.getData(event.senderID)).money
   if (money >= 1000) {
-  axios.get('https://api-vip.thanhnhu2.repl.co//hentai').then(res => {
+  axios.get('https://Api-vip-1.nguyennhuthanh.repl.co//hentai').then(res => {
   var image = res.data.data;
   let callback = function () {
           api.sendMessage({
@@ -74,7 +74,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
   if (args[0] == "sexy") {
   var money = (await Currencies.getData(event.senderID)).money
   if (money >= 1000) {
-  axios.get('https://api-vip.thanhnhu2.repl.co/gaisexy').then(res => {
+  axios.get('https://Api-vip-1.nguyennhuthanh.repl.co/gaisexy').then(res => {
   var image = res.data.data;
   let callback = function () {
           api.sendMessage({
@@ -90,7 +90,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
   if (args[0] == "nude") {
   var money = (await Currencies.getData(event.senderID)).money
   if (money >= 1000) {
-  axios.get('https://api-vip.thanhnhu2.repl.co/nude').then(res => {
+  axios.get('https://Api-vip-1.nguyennhuthanh.repl.co/nude').then(res => {
   var image = res.data.data;
   let callback = function () {
           api.sendMessage({
@@ -106,7 +106,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
   if (args[0] == "cosplay") {
   var money = (await Currencies.getData(event.senderID)).money
   if (money >= 1000) {
-  axios.get('https://api-vip.thanhnhu2.repl.co/cosplay').then(res => {
+  axios.get('https://Api-vip-1.nguyennhuthanh.repl.co/cosplay').then(res => {
   var image = res.data.data;
   let callback = function () {
           api.sendMessage({
@@ -138,7 +138,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
   if (args[0] == "mông") {
   var money = (await Currencies.getData(event.senderID)).money
   if (money >= 1000) {
-  axios.get('https://api-vip.thanhnhu2.repl.co/gaiditbu').then(res => {
+  axios.get('https://Api-vip-1.nguyennhuthanh.repl.co/gaiditbu').then(res => {
   var image = res.data.data;
   let callback = function () {
           api.sendMessage({
@@ -154,7 +154,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
  if (args[0] == "gái") {
 var money = (await Currencies.getData(event.senderID)).money
   if (money >= 1000) {
-  axios.get('https://api-vip.thanhnhu2.repl.co/gai').then(res => {
+  axios.get('https://Api-vip-1.nguyennhuthanh.repl.co/gai').then(res => {
   var image = res.data.data;
   let callback = function () {
           api.sendMessage({
