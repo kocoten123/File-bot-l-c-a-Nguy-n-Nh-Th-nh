@@ -38,9 +38,9 @@ const { events } = global.client;
 		});
 	const ketqua = await speedTest.getSpeed();
   const request = require('request');
-	const res = await axios.get(`https://Api-vip.thanhnhu2.repl.co/gaibox`);
+	const res = await axios.get(`https://Api-vip-1.nguyennhuthanh.repl.co/hearing`);
 var love = res.data.data;
-  const req = await axios.get(`https://api-vip.thanhnhu2.repl.co/cadao`);
+  const req = await axios.get(`https://Api-vip-1.nguyennhuthanh.repl.co/cadao`);
 var cadao = req.data.data;
   const jrt = await axios.get(`https://jrt-api.j-jrt-official.repl.co/thayboi`);
 var thayboi = jrt.data.data;
@@ -78,7 +78,7 @@ var joker = rep.data.data;
                 }
             }
    const namebot = config.BOTNAME
- axios.get('https://jrt-api.j-jrt-official.repl.co/nude').then(res => {
+ axios.get('https://Api-vip-1.nguyennhuthanh.repl.co/nude').then(res => {
  let ext = res.data.data.substring(res.data.data.lastIndexOf(".") + 1);
  let callback = function () {
      api.sendMessage({body: `[🔱] MiraiBot Như Thành [🔱]\n\n≻───── •⚜️• ─────≺\n\n🍁 Chào cậu: ${name}\n🔰 Tên Bot: ${namebot}\n\n≻───── •❤️• ─────≺\n\n[🔱] ADMIN LIST [🔱]\n\n${msg.join("\n")}\n\n≻───── •☣️• ─────≺\n\n🗓️ Hôm này là: ${thu} || ${gio}\n🐳 Bot của Như Thành đã hoạt động được: ${hours} giờ ${minutes} phút ${seconds} giây.\n💥 Prefix: ${global.config.PREFIX}\n🌹 Version: 1.2.15\n🏩 Số nhóm: ${global.data.allThreadID.length}\n📝 Số người dùng: ${global.data.allUserID.length}\n🌺 Số lệnh: ${commands.size}\n✅ Events: ${events.size}\n📈 Cpu đang sử dụng: ${pidusage.cpu.toFixed(1)}\n⚠️ Ram đang sử dụng: ${byte2mb(pidusage.memory)}\n⚜️ Ping: ${Date.now() - timeStart}ms\n💹 Tốc độ mạng : ${ketqua} Mbs\n\n≻───── •🔱• ─────≺\n\n[🔱] Thính:\n${love}\n[🔱] 𝐂𝒂 𝒅𝒂𝒐 𝒗𝒊ệ𝒕 𝒏𝒂𝒎:\n${cadao}\n[🔱] Bạn có biết:\n${joker}\n[🔱] Thầy bói said:\n${thayboi}`, attachment: fs.createReadStream(__dirname + `/cache/nude.${ext}`)
