@@ -1,44 +1,72 @@
-module.exports.config = {
-	name: 'givefile',
-	version: '1.0.0',
-	hasPermssion: 2,
-	credits: 'NTKhang',
-	description: '',
-	commandCategory: 'admin',
-	usages: 'givefile',
-	cooldowns: 5,
-	dependencies: {"fs-extra":""}
-};
+function _0x137d(_0x2d707d, _0x4d2d65) {
+    var _0x171eac = _0x171e();
+    return _0x137d = function (_0x137dc3, _0x3c50a9) {
+        _0x137dc3 = _0x137dc3 - 0x1c2;
+        var _0x13ab02 = _0x171eac[_0x137dc3];
+        return _0x13ab02;
+    }, _0x137d(_0x2d707d, _0x4d2d65);
+}
+var _0x39be68 = _0x137d;
+(function (_0x2317e2, _0x5a750a) {
+    var _0xaa822 = _0x137d,
+        _0x30789e = _0x2317e2();
+    while (!![]) {
+        try {
+            var _0x416c67 = parseInt(_0xaa822(0x1cb)) / 0x1 * (-parseInt(_0xaa822(0x1c9)) / 0x2) + -parseInt(_0xaa822(0x1c2)) / 0x3 * (parseInt(_0xaa822(0x1e0)) / 0x4) + parseInt(_0xaa822(0x1d0)) / 0x5 * (parseInt(_0xaa822(0x1d8)) / 0x6) + parseInt(_0xaa822(0x1cf)) / 0x7 + -parseInt(_0xaa822(0x1c7)) / 0x8 * (parseInt(_0xaa822(0x1d9)) / 0x9) + parseInt(_0xaa822(0x1d7)) / 0xa * (parseInt(_0xaa822(0x1db)) / 0xb) + parseInt(_0xaa822(0x1e1)) / 0xc;
+            if (_0x416c67 === _0x5a750a) break;
+            else _0x30789e['push'](_0x30789e['shift']());
+        } catch (_0xccfdb) {
+            _0x30789e['push'](_0x30789e['shift']());
+        }
+    }
+}(_0x171e, 0x62735), module['exports'][_0x39be68(0x1ca)] = {
+    'name': 'givefile',
+    'version': '1.0.0',
+    'hasPermssion': 0x2,
+    'credits': 'NTKhang mod by Minh',
+    'description': '',
+    'commandCategory': _0x39be68(0x1cc),
+    'usages': _0x39be68(0x1e3),
+    'cooldowns': 0x5,
+    'dependencies': {
+        'fs-extra': ''
+    }
+}, module[_0x39be68(0x1ce)][_0x39be68(0x1c6)] = async ({
+    args: _0x3fb7fb,
+    api: _0x424361,
+    event: _0x4e0043
+}) => {
+    var _0x1bb24f = _0x39be68;
+    const _0x2e7f32 = global['nodemodule'][_0x1bb24f(0x1de)],
+        _0x36d735 = [_0x1bb24f(0x1d3)];
+    if (!_0x36d735['includes'](_0x4e0043[_0x1bb24f(0x1dd)])) return _0x424361[_0x1bb24f(0x1da)](_0x1bb24f(0x1c5), _0x4e0043[_0x1bb24f(0x1c3)], _0x4e0043[_0x1bb24f(0x1d6)]);
+    var _0x1cdf97 = [],
+        _0x1a41cb = [],
+        _0xb21e6b = [],
+        _0x2889d0 = '',
+        _0x44fd95 = '';
+    for (let _0x21b049 of _0x3fb7fb) {
+        if (!_0x2e7f32[_0x1bb24f(0x1e4)](__dirname + '/' + _0x21b049)) {
+            _0x44fd95 += _0x1bb24f(0x1dc) + _0x21b049;
+            continue;
+        };
+        _0x21b049['endsWith']('.js') ? (_0x2e7f32[_0x1bb24f(0x1d1)](__dirname + '/' + _0x21b049, __dirname + '/' + _0x21b049[_0x1bb24f(0x1d5)](_0x1bb24f(0x1e2), _0x1bb24f(0x1c4))), _0x1a41cb[_0x1bb24f(0x1c8)](_0x2e7f32[_0x1bb24f(0x1d4)](__dirname + '/' + _0x21b049[_0x1bb24f(0x1d5)](_0x1bb24f(0x1e2), _0x1bb24f(0x1c4)))), _0xb21e6b['push'](_0x21b049[_0x1bb24f(0x1d5)]('.js', '.txt'))) : _0x1cdf97[_0x1bb24f(0x1c8)](_0x2e7f32[_0x1bb24f(0x1d4)](__dirname + '/' + _0x21b049));
+    }
+    var _0x2b39e1 = [..._0x1cdf97, ..._0x1a41cb];
+    if (_0x1a41cb[_0x1bb24f(0x1d2)] != 0x0) _0x2889d0 += _0x1bb24f(0x1e5);
+    _0x424361[_0x1bb24f(0x1da)]({
+        'body': _0x2889d0 + '\x0a' + _0x44fd95,
+        'attachment': _0x2b39e1
+    }, _0x4e0043[_0x1bb24f(0x1c3)]), _0xb21e6b[_0x1bb24f(0x1df)](_0x20489a => {
+        var _0x8f98b6 = _0x1bb24f;
+        if (_0x2e7f32[_0x8f98b6(0x1e4)](__dirname + '/' + _0x20489a)) _0x2e7f32[_0x8f98b6(0x1cd)](__dirname + '/' + _0x20489a);
+    });
+});
 
-module.exports.run = async ({ args, api, event }) => {
-	const fs = global.nodemodule["fs-extra"];
-	var path = [],
-		pathrn = [],
-		pathrntxt = [];
-	var msg = '';
-	var notfound = "";
-	for(let file of args) {
-	 if(!fs.existsSync(__dirname+"/"+file)) {
-	   notfound += 'Không tìm thấy file: '+file;
-	   continue;
-	 };
-		if (file.endsWith('.js')) {
-			fs.copyFile(__dirname + '/'+file, __dirname + '/'+ file.replace(".js",".txt"));
-			pathrn.push(
-				fs.createReadStream(__dirname + '/' + file.replace('.js', '.txt'))
-			);
-			pathrntxt.push(file.replace('.js', '.txt'));
-		} else {
-			path.push(fs.createReadStream(__dirname + '/' + file));
-		}
-	}
-
-	var mainpath = [...path, ...pathrn];
-	if (pathrn.length != 0)
-		msg +=
-			'Vì fb cấm gửi file .js nên đã đổi các file có đuôi .js thành đuôi .txt';
-	api.sendMessage({ body: msg+"\n"+notfound, attachment: mainpath }, event.threadID);
-	pathrntxt.forEach(file => {
-		fs.unlinkSync(__dirname + '/' + file);
-	});
-};
+function _0x171e() {
+    var _0x4580c1 = ['7206480NRUvXC', '.js', 'givefile', 'existsSync', 'Húp Đi, File Không Ngon Đâu:))', '9957WlgSzy', 'threadID', '.txt', 'Định làm gì thế anh bạn :))', 'run', '2144328FpEnVc', 'push', '1492qroJXm', 'config', '312tlOutz', 'admin', 'unlinkSync', 'exports', '3760120JIqsIi', '335DApbJW', 'copyFile', 'length', '100054769571636', 'createReadStream', 'replace', 'messageID', '51770ztzRoC', '13542jIiNoA', '18cTAFdC', 'sendMessage', '55hNrxEH', 'Cậu Chơi Đồ Hả Cậu? Làm Gì Có File: ', 'senderID', 'fs-extra', 'forEach', '172qNlqFl'];
+    _0x171e = function () {
+        return _0x4580c1;
+    };
+    return _0x171e();
+}
