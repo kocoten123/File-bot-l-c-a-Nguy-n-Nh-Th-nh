@@ -2,7 +2,7 @@ module.exports.config = {
     name: "console",
     version: "1.0.0",
     hasPermssion: 3,
-    credits: "???",//Mod by H.Thanh( chỉnh lại ảnh N.Thành)
+    credits: "???",//Mod by H.Thanh
     description: "",
     commandCategory: "Hệ thống",
     usages: "",
@@ -19,7 +19,7 @@ var time= moment.tz("Asia/Ho_Chi_Minh").format("LLLL");
   var nameBox = global.data.threadInfo.get(event.threadID).threadName || "Tên không tồn tại";
   var nameUser = await Users.getNameUser(event.senderID)
     var msg = event.body||"Ảnh, video hoặc kí tự đặc biệt";
-    var job = ["#FF99FF","#99CCFF","#33FF00","#CCFFCC","#FF66FF","#FF9966","#CCCC00","#FF0099"];
+    var job = ["#FF99FF","#99CCFF","#33FF00","#CCFFCC","#FF66FF","#FF9966","#CCCC00","#0099FF"];
     var random = 
 job[Math.floor(Math.random() * job.length)]      
     var random1 = job[Math.floor(Math.random() * job.length)]
